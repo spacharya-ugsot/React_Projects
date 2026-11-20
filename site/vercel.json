@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/MOVIE_SEAT_BOOKER/(.*)",
+      "destination": "/MOVIE_SEAT_BOOKER/index.html"
+    },
+    {
+      "source": "/REAL_TIME_SEARCH_FILTER/(.*)",
+      "destination": "/REAL_TIME_SEARCH_FILTER/index.html"
+    },
+    {
+      "source": "/CARD_MATCHING_MEMORY_GAME/(.*)",
+      "destination": "/CARD_MATCHING_MEMORY_GAME/index.html"
+    }
+  ]
+}
