@@ -46,5 +46,9 @@
   {
     "name": "REGEX_ARCHITECT",
     "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/REGEX_ARCHITECT"
+  },
+  {
+    "name": "DUNGEON_SCRAWLER",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/DUNGEON_SCRAWLER"
   }
 ]
