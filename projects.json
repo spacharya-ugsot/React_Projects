@@ -26,5 +26,9 @@
   {
     "name": "AI_BLOG_TWEET_GENERATOR",
     "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/AI_BLOG_TWEET_GENERATOR"
+  },
+  {
+    "name": "DEBATE_HUB",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/DEBATE_HUB"
   }
 ]
