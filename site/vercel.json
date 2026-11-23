@@ -51,6 +51,10 @@
     {
       "source": "/DUNGEON_SCRAWLER/(.*)",
       "destination": "/DUNGEON_SCRAWLER/index.html"
+    },
+    {
+      "source": "/INTERACTIVE_PRESENTATION_BUILDER/(.*)",
+      "destination": "/INTERACTIVE_PRESENTATION_BUILDER/index.html"
     }
   ]
 }
