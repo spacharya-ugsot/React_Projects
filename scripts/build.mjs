@@ -10,6 +10,7 @@ const SITE = path.join(ROOT, 'site');
 const NEXT = path.join(ROOT, '.site-next');
 const WORK = path.join(ROOT, '.work');
 const TOKEN = process.env.SOURCE_TOKEN || '';
+const BUILD_VERSION = 2; // bump to force every project to rebuild after build-logic changes
 
 const hide = (s) => (TOKEN ? String(s).split(TOKEN).join('***') : String(s));
 const run = (cmd, cwd) => execSync(cmd, { cwd, stdio: 'inherit', env: { ...process.env, CI: 'true' } });
@@ -56,6 +57,23 @@ function findApp(base) {
   throw new Error('No package.json found in the project folder');
 }
 
+// Apps are served from /<name>/, so React Router needs a basename or no route matches.
+// Patches the build copy only; the source repo is never changed.
+function patchRouterBase(dir) {
+  if (!fs.existsSync(dir)) return;
+  const BASE = '{import.meta.env.BASE_URL.replace(/\\/$/, "")}';
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const file = path.join(dir, entry.name);
+    if (entry.isDirectory()) { patchRouterBase(file); continue; }
+    if (!/\.(jsx?|tsx?)$/.test(entry.name)) continue;
+    const src = fs.readFileSync(file, 'utf8');
+    let out = src.replace(/<BrowserRouter(?![^>]*\bbasename=)(\s[^>]*)?>/g, (_, rest = '') => `<BrowserRouter basename=${BASE}${rest}>`);
+    out = out.replace(/createBrowserRouter\(([^()]*?)\)(?!\s*,)/g, (m, args) =>
+      args.includes('basename') || args.includes(',') ? m : `createBrowserRouter(${args}, { basename: import.meta.env.BASE_URL.replace(/\\/$/, "") })`);
+    if (out !== src) { fs.writeFileSync(file, out); console.log(`Set router basename in ${path.relative(dir, file) || entry.name}`); }
+  }
+}
+
 function build(app, name) {
   const outDir = path.join(NEXT, name);
   if (has(app, 'package-lock.json')) {
@@ -63,6 +81,7 @@ function build(app, name) {
   } else {
     run('npm install --no-audit --no-fund', app);
   }
+  patchRouterBase(path.join(app, 'src'));
   if (process.env.PROJECT_ENV) fs.writeFileSync(path.join(app, '.env.production.local'), process.env.PROJECT_ENV + '\n');
   run(`npx vite build --base=/${name}/ --outDir "${outDir}" --emptyOutDir`, app);
   if (!has(outDir, 'index.html')) throw new Error('Build finished but produced no index.html');
@@ -71,14 +90,14 @@ function build(app, name) {
 const status = {};
 for (const p of projects) {
   const name = p.name;
-  const entry = { source: p.source, group: p.group || 'React Projects', title: p.title || '', ok: false };
+  const entry = { source: p.source, group: p.group || 'React Projects', title: p.title || '', ok: false, v: BUILD_VERSION };
   console.log(`\n=== ${name} ===`);
   try {
     const src = parseLink(p.source);
     const repoDir = checkout(src);
     entry.tree = quiet(`git rev-parse "HEAD:${src.dir}"`, repoDir);
     const prev = previous[name];
-    if (prev && prev.ok && prev.tree === entry.tree && prev.source === p.source && has(SITE, name, 'index.html')) {
+    if (prev && prev.ok && prev.v === BUILD_VERSION && prev.tree === entry.tree && prev.source === p.source && has(SITE, name, 'index.html')) {
       fs.cpSync(path.join(SITE, name), path.join(NEXT, name), { recursive: true });
       entry.builtAt = prev.builtAt;
       console.log('Unchanged, reusing previous build');
