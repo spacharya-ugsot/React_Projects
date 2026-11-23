@@ -2,102 +2,136 @@
   "projects": {
     "MOVIE_SEAT_BOOKER": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/MOVIE_SEAT_BOOKER",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "89c54546ca9834767f6a89343038e558894e6669",
       "builtAt": "2026-11-20T09:47:12.944Z"
     },
     "REAL_TIME_SEARCH_FILTER": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/REAL_TIME_SEARCH_FILTER",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "9d12d0b5f29a416c42849e65b70bf2d1f897c993",
       "builtAt": "2026-11-20T09:47:15.131Z"
     },
     "CARD_MATCHING_MEMORY_GAME": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/CARD_MATCHING_MEMORY_GAME",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "20a7fd9bc2ac2b4d16df64a98882e855cddb1408",
       "builtAt": "2026-11-20T09:47:17.312Z"
     },
     "INTERACTIVE_FAQ_ACCORDION": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/INTERACTIVE_FAQ_ACCORDION",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "697a805e05d69a22e07341e48b065efc07e5e561",
       "builtAt": "2026-11-23T04:34:07.818Z"
     },
     "SIMPLE_TODO_LIST": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/SIMPLE_TODO_LIST",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "9dab6c534e76d94e04071c15567fe610eec27858",
       "builtAt": "2026-11-23T04:35:05.374Z"
     },
     "MULTI_STEP_CONTACT_FORM": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/MULTI_STEP_CONTACT_FORM",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "e275d642a7109dd23fecd9dbdc8c47bf5c8f5ea7",
       "builtAt": "2026-11-23T04:36:00.831Z"
     },
     "AI_BLOG_TWEET_GENERATOR": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/AI_BLOG_TWEET_GENERATOR",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "1ac489835dfc891569d5d073b137596b13a77d2f",
       "builtAt": "2026-11-23T04:37:22.111Z"
     },
     "DEBATE_HUB": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/DEBATE_HUB",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "a4e22ab51c531e715ac30c6c8fa8443daee35731",
       "builtAt": "2026-11-23T04:38:12.329Z"
     },
     "AI_LEARNING_PATH_GENERATOR": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/AI_LEARNING_PATH_GENERATOR",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "0264504ea244151778b9f64dc82a4929188024c1",
       "builtAt": "2026-11-23T04:39:15.025Z"
     },
     "API_TEST_RUNNER": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/API_TEST_RUNNER",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "c7fc1af375cafbebbfc8ddf1e75e9ec96a72aa09",
       "builtAt": "2026-11-23T04:39:55.920Z"
     },
     "CODEBASE_VISUALIZER": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/CODEBASE_VISUALIZER",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "04e0eae1858c04fe8750b4336eb08f567adce8d9",
       "builtAt": "2026-11-23T04:40:45.678Z"
     },
     "REGEX_ARCHITECT": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/REGEX_ARCHITECT",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "a37fd337325708481deebe676c7e66dee195a947",
       "builtAt": "2026-11-23T04:41:39.363Z"
     },
     "DUNGEON_SCRAWLER": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/DUNGEON_SCRAWLER",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "d5ae106639e9344a3734e13e06442a54d116f4c6",
       "builtAt": "2026-11-23T04:42:12.869Z"
     },
     "INTERACTIVE_PRESENTATION_BUILDER": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/INTERACTIVE_PRESENTATION_BUILDER",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "2a789bd05b449a252f6a6e4e5c47aa12cc835da5",
       "builtAt": "2026-11-23T04:42:46.366Z"
     },
     "GESTURELEARN_SIGN_TUTOR": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/GESTURELEARN_SIGN_TUTOR",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "414798e620f1701f0e02c61ecc491d2f955727ac",
       "builtAt": "2026-11-23T04:43:31.597Z"
     },
     "GLOBAL_AUTH_CONTEXT": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/GLOBAL_AUTH_CONTEXT",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "f5fc94d17cfd1f4614f365ffda371cd9da30eeab",
       "builtAt": "2026-11-23T04:44:07.650Z"
     },
     "ECOMMERCE_SHOPPING_CART_REDUX": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/ECOMMERCE_SHOPPING_CART_REDUX",
+      "group": "React Projects",
+      "title": "",
       "ok": true,
       "tree": "f23fa7776ff4aa819e5f87bba2c88a51d8b95b57",
       "builtAt": "2026-11-23T04:45:48.101Z"
