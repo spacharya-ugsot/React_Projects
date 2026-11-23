@@ -55,6 +55,10 @@
     {
       "source": "/INTERACTIVE_PRESENTATION_BUILDER/(.*)",
       "destination": "/INTERACTIVE_PRESENTATION_BUILDER/index.html"
+    },
+    {
+      "source": "/GESTURELEARN_SIGN_TUTOR/(.*)",
+      "destination": "/GESTURELEARN_SIGN_TUTOR/index.html"
     }
   ]
 }

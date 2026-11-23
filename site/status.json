@@ -83,6 +83,12 @@
       "ok": true,
       "tree": "2a789bd05b449a252f6a6e4e5c47aa12cc835da5",
       "builtAt": "2026-11-23T04:42:46.366Z"
+    },
+    "GESTURELEARN_SIGN_TUTOR": {
+      "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/GESTURELEARN_SIGN_TUTOR",
+      "ok": true,
+      "tree": "414798e620f1701f0e02c61ecc491d2f955727ac",
+      "builtAt": "2026-11-23T04:43:31.597Z"
     }
   }
 }
