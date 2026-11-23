@@ -47,6 +47,12 @@
       "ok": true,
       "tree": "a4e22ab51c531e715ac30c6c8fa8443daee35731",
       "builtAt": "2026-11-23T04:38:12.329Z"
+    },
+    "AI_LEARNING_PATH_GENERATOR": {
+      "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/AI_LEARNING_PATH_GENERATOR",
+      "ok": true,
+      "tree": "0264504ea244151778b9f64dc82a4929188024c1",
+      "builtAt": "2026-11-23T04:39:15.025Z"
     }
   }
 }
