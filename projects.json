@@ -38,5 +38,9 @@
   {
     "name": "API_TEST_RUNNER",
     "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/API_TEST_RUNNER"
+  },
+  {
+    "name": "CODEBASE_VISUALIZER",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/CODEBASE_VISUALIZER"
   }
 ]
