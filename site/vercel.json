@@ -15,6 +15,10 @@
     {
       "source": "/INTERACTIVE_FAQ_ACCORDION/(.*)",
       "destination": "/INTERACTIVE_FAQ_ACCORDION/index.html"
+    },
+    {
+      "source": "/SIMPLE_TODO_LIST/(.*)",
+      "destination": "/SIMPLE_TODO_LIST/index.html"
     }
   ]
 }
