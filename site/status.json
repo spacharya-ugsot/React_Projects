@@ -17,6 +17,12 @@
       "ok": true,
       "tree": "20a7fd9bc2ac2b4d16df64a98882e855cddb1408",
       "builtAt": "2026-11-20T09:47:17.312Z"
+    },
+    "INTERACTIVE_FAQ_ACCORDION": {
+      "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/INTERACTIVE_FAQ_ACCORDION",
+      "ok": true,
+      "tree": "697a805e05d69a22e07341e48b065efc07e5e561",
+      "builtAt": "2026-11-23T04:34:07.818Z"
     }
   }
 }

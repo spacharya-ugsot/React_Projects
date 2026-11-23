@@ -11,6 +11,10 @@
     {
       "source": "/CARD_MATCHING_MEMORY_GAME/(.*)",
       "destination": "/CARD_MATCHING_MEMORY_GAME/index.html"
+    },
+    {
+      "source": "/INTERACTIVE_FAQ_ACCORDION/(.*)",
+      "destination": "/INTERACTIVE_FAQ_ACCORDION/index.html"
     }
   ]
 }
