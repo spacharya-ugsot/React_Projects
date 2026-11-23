@@ -62,5 +62,9 @@
   {
     "name": "GLOBAL_AUTH_CONTEXT",
     "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/GLOBAL_AUTH_CONTEXT"
+  },
+  {
+    "name": "ECOMMERCE_SHOPPING_CART_REDUX",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/ECOMMERCE_SHOPPING_CART_REDUX"
   }
 ]
