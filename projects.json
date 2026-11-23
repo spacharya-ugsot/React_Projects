@@ -22,5 +22,9 @@
   {
     "name": "MULTI_STEP_CONTACT_FORM",
     "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/MULTI_STEP_CONTACT_FORM"
+  },
+  {
+    "name": "AI_BLOG_TWEET_GENERATOR",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/AI_BLOG_TWEET_GENERATOR"
   }
 ]
