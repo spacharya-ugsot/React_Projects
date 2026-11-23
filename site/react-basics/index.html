@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Basics</title>
+  <style>
+    :root{--bg:#f6f7f9;--card:#fff;--text:#1d2129;--muted:#6b7280;--accent:#2563eb;--border:#e5e7eb;--warn:#b45309;--err:#b91c1c}
+    @media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b22;--text:#e6e8ec;--muted:#9aa1ad;--accent:#60a5fa;--border:#2a2f3a;--warn:#fbbf24;--err:#f87171}}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 16px}header{padding:48px 0 8px}h1{margin:0 0 8px;font-size:2rem}h2{margin:32px 0 4px;font-size:1.25rem}
+    p{margin:0;color:var(--muted)}a.back{display:inline-block;margin-bottom:12px;color:var(--accent);text-decoration:none;font-size:.9rem}h2 a{color:inherit;text-decoration:none}h2 a:hover{color:var(--accent)}
+    .grid{padding:16px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+    .card{display:flex;flex-direction:column;gap:6px;padding:18px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:inherit;text-decoration:none;transition:border-color .15s,transform .15s}
+    a.card:hover{border-color:var(--accent);transform:translateY(-2px)}.off{opacity:.6}
+    .name{font-weight:600}.path{font-size:.85rem;color:var(--muted);word-break:break-all}.warn{font-size:.8rem;color:var(--warn)}.err{font-size:.8rem;color:var(--err)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="back" href="../">&larr; All React projects</a>
+      <h1>React Basics</h1>
+      <p>6 live projects. Click any card to open it.</p>
+    </header>
+    <div class="grid">
+      <a class="card" href="../MOVIE_SEAT_BOOKER/"><span class="name">Movie Theater Seat Booker</span><span class="path">/MOVIE_SEAT_BOOKER/</span></a>
+      <a class="card" href="../REAL_TIME_SEARCH_FILTER/"><span class="name">Real-Time Search Filter</span><span class="path">/REAL_TIME_SEARCH_FILTER/</span></a>
+      <a class="card" href="../CARD_MATCHING_MEMORY_GAME/"><span class="name">Card-Matching Memory Game</span><span class="path">/CARD_MATCHING_MEMORY_GAME/</span></a>
+      <a class="card" href="../INTERACTIVE_FAQ_ACCORDION/"><span class="name">Interactive FAQ Accordion</span><span class="path">/INTERACTIVE_FAQ_ACCORDION/</span></a>
+      <a class="card" href="../SIMPLE_TODO_LIST/"><span class="name">Simple To-Do List</span><span class="path">/SIMPLE_TODO_LIST/</span></a>
+      <a class="card" href="../MULTI_STEP_CONTACT_FORM/"><span class="name">Multi-Step Contact Form (React 19 Actions)</span><span class="path">/MULTI_STEP_CONTACT_FORM/</span></a>
+    </div>
+  </div>
+</body>
+</html>

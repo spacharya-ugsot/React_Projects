@@ -67,6 +67,30 @@
     {
       "source": "/ECOMMERCE_SHOPPING_CART_REDUX/(.*)",
       "destination": "/ECOMMERCE_SHOPPING_CART_REDUX/index.html"
+    },
+    {
+      "source": "/AI_POWERED_FINANCIAL_DASHBOARD/(.*)",
+      "destination": "/AI_POWERED_FINANCIAL_DASHBOARD/index.html"
+    },
+    {
+      "source": "/INTERIOR_AI/(.*)",
+      "destination": "/INTERIOR_AI/index.html"
+    },
+    {
+      "source": "/AGRI_AI_SMART_CROP_ADVISOR/(.*)",
+      "destination": "/AGRI_AI_SMART_CROP_ADVISOR/index.html"
+    },
+    {
+      "source": "/ATLAS_AI_TRIP_PLANNER/(.*)",
+      "destination": "/ATLAS_AI_TRIP_PLANNER/index.html"
+    },
+    {
+      "source": "/CODETUTOR_AI_INTERACTIVE_CODING_PROBLEM_ASSISTANT/(.*)",
+      "destination": "/CODETUTOR_AI_INTERACTIVE_CODING_PROBLEM_ASSISTANT/index.html"
+    },
+    {
+      "source": "/GAINSAI_FITNESS_ARCHITECT/(.*)",
+      "destination": "/GAINSAI_FITNESS_ARCHITECT/index.html"
     }
   ]
 }
