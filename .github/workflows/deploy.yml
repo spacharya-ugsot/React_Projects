@@ -32,6 +32,7 @@ jobs:
       - name: Build projects
         env:
           SOURCE_TOKEN: ${{ secrets.SOURCE_TOKEN }}
+          PROJECT_ENV: ${{ secrets.PROJECT_ENV }}   # optional: API keys as KEY=value lines
         run: node scripts/build.mjs
 
       - name: Commit and push site
