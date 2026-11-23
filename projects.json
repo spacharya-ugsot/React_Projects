@@ -42,5 +42,9 @@
   {
     "name": "CODEBASE_VISUALIZER",
     "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/CODEBASE_VISUALIZER"
+  },
+  {
+    "name": "REGEX_ARCHITECT",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/REGEX_ARCHITECT"
   }
 ]
