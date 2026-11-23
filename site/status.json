@@ -59,6 +59,12 @@
       "ok": true,
       "tree": "c7fc1af375cafbebbfc8ddf1e75e9ec96a72aa09",
       "builtAt": "2026-11-23T04:39:55.920Z"
+    },
+    "CODEBASE_VISUALIZER": {
+      "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/CODEBASE_VISUALIZER",
+      "ok": true,
+      "tree": "04e0eae1858c04fe8750b4336eb08f567adce8d9",
+      "builtAt": "2026-11-23T04:40:45.678Z"
     }
   }
 }

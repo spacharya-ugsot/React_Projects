@@ -39,6 +39,10 @@
     {
       "source": "/API_TEST_RUNNER/(.*)",
       "destination": "/API_TEST_RUNNER/index.html"
+    },
+    {
+      "source": "/CODEBASE_VISUALIZER/(.*)",
+      "destination": "/CODEBASE_VISUALIZER/index.html"
     }
   ]
 }
