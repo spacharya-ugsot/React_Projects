@@ -43,6 +43,10 @@
     {
       "source": "/CODEBASE_VISUALIZER/(.*)",
       "destination": "/CODEBASE_VISUALIZER/index.html"
+    },
+    {
+      "source": "/REGEX_ARCHITECT/(.*)",
+      "destination": "/REGEX_ARCHITECT/index.html"
     }
   ]
 }
