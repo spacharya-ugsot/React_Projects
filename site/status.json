@@ -177,8 +177,8 @@
       "title": "Agri-AI – Smart Crop Advisor",
       "ok": true,
       "v": 2,
-      "tree": "ee85fcd9c5dbe832018c56e592f2b4d9a1bf29c4",
-      "builtAt": "2026-11-23T13:15:46.433Z"
+      "tree": "765b1ea7bc68cdd56ada7545a896c03c95a62216",
+      "builtAt": "2026-11-23T13:37:55.453Z"
     },
     "ATLAS_AI_TRIP_PLANNER": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/ATLAS_AI_TRIP_PLANNER",
@@ -186,8 +186,8 @@
       "title": "Atlas – Collaborative AI Trip Planner",
       "ok": true,
       "v": 2,
-      "tree": "dc242b846628bba3f6676f2cabe17e8e963a9ac5",
-      "builtAt": "2026-11-23T13:15:49.778Z"
+      "tree": "c4263b95d1420afbfdbc52ae349ad4da9e51e755",
+      "builtAt": "2026-11-23T13:37:57.945Z"
     },
     "CODETUTOR_AI_INTERACTIVE_CODING_PROBLEM_ASSISTANT": {
       "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/CODETUTOR_AI_INTERACTIVE_CODING_PROBLEM_ASSISTANT",
@@ -204,8 +204,8 @@
       "title": "GainsAI – Personalized Fitness Architect",
       "ok": true,
       "v": 2,
-      "tree": "7b4b775b756edd53986d28895541d3fd547bb66a",
-      "builtAt": "2026-11-23T13:15:58.247Z"
+      "tree": "3e8e32e9e9ae808b88c39633fd92abcd460a4fef",
+      "builtAt": "2026-11-23T13:38:00.439Z"
     }
   }
 }
