@@ -50,5 +50,9 @@
   {
     "name": "DUNGEON_SCRAWLER",
     "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/DUNGEON_SCRAWLER"
+  },
+  {
+    "name": "INTERACTIVE_PRESENTATION_BUILDER",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/INTERACTIVE_PRESENTATION_BUILDER"
   }
 ]
