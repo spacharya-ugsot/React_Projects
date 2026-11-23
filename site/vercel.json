@@ -23,6 +23,10 @@
     {
       "source": "/MULTI_STEP_CONTACT_FORM/(.*)",
       "destination": "/MULTI_STEP_CONTACT_FORM/index.html"
+    },
+    {
+      "source": "/AI_BLOG_TWEET_GENERATOR/(.*)",
+      "destination": "/AI_BLOG_TWEET_GENERATOR/index.html"
     }
   ]
 }
