@@ -63,6 +63,7 @@ function build(app, name) {
   } else {
     run('npm install --no-audit --no-fund', app);
   }
+  if (process.env.PROJECT_ENV) fs.writeFileSync(path.join(app, '.env.production.local'), process.env.PROJECT_ENV + '\n');
   run(`npx vite build --base=/${name}/ --outDir "${outDir}" --emptyOutDir`, app);
   if (!has(outDir, 'index.html')) throw new Error('Build finished but produced no index.html');
 }
@@ -70,7 +71,7 @@ function build(app, name) {
 const status = {};
 for (const p of projects) {
   const name = p.name;
-  const entry = { source: p.source, ok: false };
+  const entry = { source: p.source, group: p.group || 'React Projects', title: p.title || '', ok: false };
   console.log(`\n=== ${name} ===`);
   try {
     const src = parseLink(p.source);
@@ -102,42 +103,68 @@ const live = Object.keys(status).filter((n) => has(NEXT, n, 'index.html'));
 const rewrites = live.map((n) => ({ source: `/${n}/(.*)`, destination: `/${n}/index.html` }));
 const pretty = (n) => n.toLowerCase().replace(/[_-]+/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const cards = Object.entries(status).map(([n, s]) => {
-  const state = s.ok ? '' : s.servingPrevious ? '<span class="warn">Last build failed, showing previous version</span>' : '<span class="err">Build failed</span>';
-  const inner = `<span class="name">${esc(pretty(n))}</span><span class="path">/${esc(n)}/</span>${state}`;
-  return live.includes(n) ? `<a class="card" href="./${esc(n)}/">${inner}</a>` : `<div class="card off">${inner}</div>`;
-}).join('\n      ');
+const slug = (g) => (/full.?stack/i.test(g) ? 'full-stack' : g.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''));
 
-const html = `<!DOCTYPE html>
+const groups = [];
+for (const [n, s] of Object.entries(status)) {
+  let g = groups.find((x) => x.name === s.group);
+  if (!g) groups.push((g = { name: s.group, slug: slug(s.group), items: [] }));
+  g.items.push([n, s]);
+}
+
+const card = ([n, s], prefix) => {
+  const state = s.ok ? '' : s.servingPrevious ? '<span class="warn">Last build failed, showing previous version</span>' : '<span class="err">Build failed</span>';
+  const inner = `<span class="name">${esc(s.title || pretty(n))}</span><span class="path">/${esc(n)}/</span>${state}`;
+  return live.includes(n) ? `<a class="card" href="${prefix}${esc(n)}/">${inner}</a>` : `<div class="card off">${inner}</div>`;
+};
+
+const page = (title, subtitle, body, back) => `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>React Projects</title>
+  <title>${esc(title)}</title>
   <style>
     :root{--bg:#f6f7f9;--card:#fff;--text:#1d2129;--muted:#6b7280;--accent:#2563eb;--border:#e5e7eb;--warn:#b45309;--err:#b91c1c}
     @media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#181b22;--text:#e6e8ec;--muted:#9aa1ad;--accent:#60a5fa;--border:#2a2f3a;--warn:#fbbf24;--err:#f87171}}
     *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text)}
-    header{max-width:1100px;margin:0 auto;padding:48px 16px 16px}h1{margin:0 0 8px;font-size:2rem}p{margin:0;color:var(--muted)}
-    main{max-width:1100px;margin:0 auto;padding:16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+    .wrap{max-width:1100px;margin:0 auto;padding:0 16px}header{padding:48px 0 8px}h1{margin:0 0 8px;font-size:2rem}h2{margin:32px 0 4px;font-size:1.25rem}
+    p{margin:0;color:var(--muted)}a.back{display:inline-block;margin-bottom:12px;color:var(--accent);text-decoration:none;font-size:.9rem}h2 a{color:inherit;text-decoration:none}h2 a:hover{color:var(--accent)}
+    .grid{padding:16px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
     .card{display:flex;flex-direction:column;gap:6px;padding:18px;border:1px solid var(--border);border-radius:10px;background:var(--card);color:inherit;text-decoration:none;transition:border-color .15s,transform .15s}
     a.card:hover{border-color:var(--accent);transform:translateY(-2px)}.off{opacity:.6}
     .name{font-weight:600}.path{font-size:.85rem;color:var(--muted);word-break:break-all}.warn{font-size:.8rem;color:var(--warn)}.err{font-size:.8rem;color:var(--err)}
   </style>
 </head>
 <body>
-  <header>
-    <h1>React Projects</h1>
-    <p>${live.length} live React projects. Click any card to open it.</p>
-  </header>
-  <main>
-      ${cards}
-  </main>
+  <div class="wrap">
+    <header>
+      ${back ? '<a class="back" href="../">&larr; All React projects</a>' : ''}
+      <h1>${esc(title)}</h1>
+      <p>${esc(subtitle)}</p>
+    </header>
+    ${body}
+  </div>
 </body>
 </html>
 `;
 
-fs.writeFileSync(path.join(NEXT, 'index.html'), html);
+const liveCount = (items) => items.filter(([n]) => live.includes(n)).length;
+const rootBody = groups.map((g) => `<h2><a href="./${esc(g.slug)}/">${esc(g.name)}</a></h2>
+    <p>${liveCount(g.items)} live</p>
+    <div class="grid">
+      ${g.items.map((it) => card(it, './')).join('\n      ')}
+    </div>`).join('\n    ');
+fs.writeFileSync(path.join(NEXT, 'index.html'), page('React Projects', `${live.length} live React projects. Click any card to open it.`, rootBody, false));
+
+for (const g of groups) {
+  fs.mkdirSync(path.join(NEXT, g.slug), { recursive: true });
+  const body = `<div class="grid">
+      ${g.items.map((it) => card(it, '../')).join('\n      ')}
+    </div>`;
+  fs.writeFileSync(path.join(NEXT, g.slug, 'index.html'), page(g.name, `${liveCount(g.items)} live projects. Click any card to open it.`, body, true));
+}
+
 fs.writeFileSync(path.join(NEXT, 'status.json'), JSON.stringify({ projects: status }, null, 2) + '\n');
 fs.writeFileSync(path.join(NEXT, 'vercel.json'), JSON.stringify({ rewrites }, null, 2) + '\n');
 fs.rmSync(SITE, { recursive: true, force: true });
