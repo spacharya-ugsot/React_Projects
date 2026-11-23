@@ -35,6 +35,10 @@
     {
       "source": "/AI_LEARNING_PATH_GENERATOR/(.*)",
       "destination": "/AI_LEARNING_PATH_GENERATOR/index.html"
+    },
+    {
+      "source": "/API_TEST_RUNNER/(.*)",
+      "destination": "/API_TEST_RUNNER/index.html"
     }
   ]
 }
