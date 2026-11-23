@@ -19,6 +19,10 @@
     {
       "source": "/SIMPLE_TODO_LIST/(.*)",
       "destination": "/SIMPLE_TODO_LIST/index.html"
+    },
+    {
+      "source": "/MULTI_STEP_CONTACT_FORM/(.*)",
+      "destination": "/MULTI_STEP_CONTACT_FORM/index.html"
     }
   ]
 }
