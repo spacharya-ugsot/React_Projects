@@ -14,5 +14,9 @@
   {
     "name": "INTERACTIVE_FAQ_ACCORDION",
     "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/INTERACTIVE_FAQ_ACCORDION"
+  },
+  {
+    "name": "SIMPLE_TODO_LIST",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/SIMPLE_TODO_LIST"
   }
 ]
