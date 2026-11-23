@@ -47,6 +47,10 @@
     {
       "source": "/REGEX_ARCHITECT/(.*)",
       "destination": "/REGEX_ARCHITECT/index.html"
+    },
+    {
+      "source": "/DUNGEON_SCRAWLER/(.*)",
+      "destination": "/DUNGEON_SCRAWLER/index.html"
     }
   ]
 }
