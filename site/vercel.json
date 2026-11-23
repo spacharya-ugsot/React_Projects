@@ -63,6 +63,10 @@
     {
       "source": "/GLOBAL_AUTH_CONTEXT/(.*)",
       "destination": "/GLOBAL_AUTH_CONTEXT/index.html"
+    },
+    {
+      "source": "/ECOMMERCE_SHOPPING_CART_REDUX/(.*)",
+      "destination": "/ECOMMERCE_SHOPPING_CART_REDUX/index.html"
     }
   ]
 }

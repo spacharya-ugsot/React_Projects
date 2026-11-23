@@ -95,6 +95,12 @@
       "ok": true,
       "tree": "f5fc94d17cfd1f4614f365ffda371cd9da30eeab",
       "builtAt": "2026-11-23T04:44:07.650Z"
+    },
+    "ECOMMERCE_SHOPPING_CART_REDUX": {
+      "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/ECOMMERCE_SHOPPING_CART_REDUX",
+      "ok": true,
+      "tree": "f23fa7776ff4aa819e5f87bba2c88a51d8b95b57",
+      "builtAt": "2026-11-23T04:45:48.101Z"
     }
   }
 }
