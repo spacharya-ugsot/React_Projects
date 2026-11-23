@@ -1,70 +1,140 @@
 [
   {
     "name": "MOVIE_SEAT_BOOKER",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/MOVIE_SEAT_BOOKER"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/MOVIE_SEAT_BOOKER",
+    "group": "React Basics",
+    "title": "Movie Theater Seat Booker"
   },
   {
     "name": "REAL_TIME_SEARCH_FILTER",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/REAL_TIME_SEARCH_FILTER"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/REAL_TIME_SEARCH_FILTER",
+    "group": "React Basics",
+    "title": "Real-Time Search Filter"
   },
   {
     "name": "CARD_MATCHING_MEMORY_GAME",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/CARD_MATCHING_MEMORY_GAME"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/CARD_MATCHING_MEMORY_GAME",
+    "group": "React Basics",
+    "title": "Card-Matching Memory Game"
   },
   {
     "name": "INTERACTIVE_FAQ_ACCORDION",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/INTERACTIVE_FAQ_ACCORDION"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/INTERACTIVE_FAQ_ACCORDION",
+    "group": "React Basics",
+    "title": "Interactive FAQ Accordion"
   },
   {
     "name": "SIMPLE_TODO_LIST",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/SIMPLE_TODO_LIST"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/SIMPLE_TODO_LIST",
+    "group": "React Basics",
+    "title": "Simple To-Do List"
   },
   {
     "name": "MULTI_STEP_CONTACT_FORM",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/MULTI_STEP_CONTACT_FORM"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/MULTI_STEP_CONTACT_FORM",
+    "group": "React Basics",
+    "title": "Multi-Step Contact Form (React 19 Actions)"
   },
   {
     "name": "AI_BLOG_TWEET_GENERATOR",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/AI_BLOG_TWEET_GENERATOR"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/AI_BLOG_TWEET_GENERATOR",
+    "group": "Advanced React",
+    "title": "AI Blog & Tweet Generator"
   },
   {
     "name": "DEBATE_HUB",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/DEBATE_HUB"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/DEBATE_HUB",
+    "group": "Advanced React",
+    "title": "The Debate Hub – Argue with an AI"
   },
   {
     "name": "AI_LEARNING_PATH_GENERATOR",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/AI_LEARNING_PATH_GENERATOR"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/AI_LEARNING_PATH_GENERATOR",
+    "group": "Advanced React",
+    "title": "AI-Powered Learning Path Generator"
   },
   {
     "name": "API_TEST_RUNNER",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/API_TEST_RUNNER"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/API_TEST_RUNNER",
+    "group": "Advanced React",
+    "title": "API Test Runner with History & Reports"
   },
   {
     "name": "CODEBASE_VISUALIZER",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/CODEBASE_VISUALIZER"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/CODEBASE_VISUALIZER",
+    "group": "Advanced React",
+    "title": "Codebase Visualizer & Refactor Helper"
   },
   {
     "name": "REGEX_ARCHITECT",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/REGEX_ARCHITECT"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/REGEX_ARCHITECT",
+    "group": "Advanced React",
+    "title": "RegEx Architect – Visual Regular Expression Builder"
   },
   {
     "name": "DUNGEON_SCRAWLER",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/DUNGEON_SCRAWLER"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/DUNGEON_SCRAWLER",
+    "group": "Advanced React",
+    "title": "Dungeon Scrawler – Text-Based RPG Engine"
   },
   {
     "name": "INTERACTIVE_PRESENTATION_BUILDER",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/INTERACTIVE_PRESENTATION_BUILDER"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/INTERACTIVE_PRESENTATION_BUILDER",
+    "group": "Advanced React",
+    "title": "Interactive Presentation Builder"
   },
   {
     "name": "GESTURELEARN_SIGN_TUTOR",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/GESTURELEARN_SIGN_TUTOR"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/GESTURELEARN_SIGN_TUTOR",
+    "group": "Advanced React",
+    "title": "GestureLearn – AI Sign Language Tutor"
   },
   {
     "name": "GLOBAL_AUTH_CONTEXT",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/GLOBAL_AUTH_CONTEXT"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/GLOBAL_AUTH_CONTEXT",
+    "group": "Advanced React",
+    "title": "Global User Authentication Context"
   },
   {
     "name": "ECOMMERCE_SHOPPING_CART_REDUX",
-    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/ECOMMERCE_SHOPPING_CART_REDUX"
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/ECOMMERCE_SHOPPING_CART_REDUX",
+    "group": "Advanced React",
+    "title": "E-commerce Shopping Cart (Redux)"
+  },
+  {
+    "name": "AI_POWERED_FINANCIAL_DASHBOARD",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/AI_POWERED_FINANCIAL_DASHBOARD",
+    "group": "Full-Stack React Project",
+    "title": "Global Market Snapshot – AI Financial Dashboard"
+  },
+  {
+    "name": "INTERIOR_AI",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/INTERIOR_AI",
+    "group": "Full-Stack React Project",
+    "title": "Interior AI – Smart Home Design Stylist"
+  },
+  {
+    "name": "AGRI_AI_SMART_CROP_ADVISOR",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/AGRI_AI_SMART_CROP_ADVISOR",
+    "group": "Full-Stack React Project",
+    "title": "Agri-AI – Smart Crop Advisor"
+  },
+  {
+    "name": "ATLAS_AI_TRIP_PLANNER",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/ATLAS_AI_TRIP_PLANNER",
+    "group": "Full-Stack React Project",
+    "title": "Atlas – Collaborative AI Trip Planner"
+  },
+  {
+    "name": "CODETUTOR_AI_INTERACTIVE_CODING_PROBLEM_ASSISTANT",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/CODETUTOR_AI_INTERACTIVE_CODING_PROBLEM_ASSISTANT",
+    "group": "Full-Stack React Project",
+    "title": "CodeTutor AI – Interactive Coding Problem Assistant"
+  },
+  {
+    "name": "GAINSAI_FITNESS_ARCHITECT",
+    "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/GAINSAI_FITNESS_ARCHITECT",
+    "group": "Full-Stack React Project",
+    "title": "GainsAI – Personalized Fitness Architect"
   }
 ]
