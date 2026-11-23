@@ -27,6 +27,10 @@
     {
       "source": "/AI_BLOG_TWEET_GENERATOR/(.*)",
       "destination": "/AI_BLOG_TWEET_GENERATOR/index.html"
+    },
+    {
+      "source": "/DEBATE_HUB/(.*)",
+      "destination": "/DEBATE_HUB/index.html"
     }
   ]
 }

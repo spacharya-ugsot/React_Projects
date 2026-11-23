@@ -41,6 +41,12 @@
       "ok": true,
       "tree": "1ac489835dfc891569d5d073b137596b13a77d2f",
       "builtAt": "2026-11-23T04:37:22.111Z"
+    },
+    "DEBATE_HUB": {
+      "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/DEBATE_HUB",
+      "ok": true,
+      "tree": "a4e22ab51c531e715ac30c6c8fa8443daee35731",
+      "builtAt": "2026-11-23T04:38:12.329Z"
     }
   }
 }
