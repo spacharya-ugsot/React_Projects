@@ -89,6 +89,12 @@
       "ok": true,
       "tree": "414798e620f1701f0e02c61ecc491d2f955727ac",
       "builtAt": "2026-11-23T04:43:31.597Z"
+    },
+    "GLOBAL_AUTH_CONTEXT": {
+      "source": "https://github.com/mithun-ugsot/MERN_Projects/tree/main/REACT/GLOBAL_AUTH_CONTEXT",
+      "ok": true,
+      "tree": "f5fc94d17cfd1f4614f365ffda371cd9da30eeab",
+      "builtAt": "2026-11-23T04:44:07.650Z"
     }
   }
 }

@@ -59,6 +59,10 @@
     {
       "source": "/GESTURELEARN_SIGN_TUTOR/(.*)",
       "destination": "/GESTURELEARN_SIGN_TUTOR/index.html"
+    },
+    {
+      "source": "/GLOBAL_AUTH_CONTEXT/(.*)",
+      "destination": "/GLOBAL_AUTH_CONTEXT/index.html"
     }
   ]
 }
